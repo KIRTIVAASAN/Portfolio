@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of the webpage.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Development">
+    <meta name="author" content="Your Name">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main>
+        <aside>
+            <ul class="link">
+                <li onclick="navigate(0)" class="activelink"><i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </li>
+                <li onclick="navigate(1)" class="activelink"><i class="fa-solid fa-house"></i>
+                    <p>About Me</p>
+                </li>
+                <li onclick="navigate(2)" class="activelink"><i class="fa-solid fa-house"></i>
+                    <p>Projects</p>
+                </li>
+                <li onclick="navigate(3)" class="activelink"><i class="fa-solid fa-house"></i>
+                    <p>Certifications</p>
+                </li>
+                <li onclick="navigate(4)" class="activelink"><i class="fa-solid fa-house"></i>
+                    <p>Contact Me</p>
+                </li>
+            </ul>
+        </aside>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide home-slide" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div class="homecontent" style="flex: 1; text-align: center;">
+                        <h1>Hi! I'm <span class="stylized-name">Kirtivaasan N</span>,</h1>
+                        <h2> A <span class="professions">Web Developer</span></h2>
+                        <div class="buttongroup" style="margin-top: 20px; margin-left: 250px;">
+                          
+                            <button onclick="navigate(1)">About Me</button>
+                        </div>
+                    </div>
+                    <img src="photo.jpg" alt="" style="flex: 1; max-width: 45%; height: auto;">
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="about-us" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <div style="flex: 1;">
+                            <h1 class="heading">About Me</h1>
+                            <h3 class="sub-heading">I'm Kirtivaasan N,<span class="professions">A Web Developer</span></h3>
+                            <p class="aboutme-details">
+                                Hi, I'm Kirtivaasan N, a Computer Science and Engineering student with a solid foundation in software development, algorithms, and problem-solving. I'm really passionate about technology and love diving into new programming languages and exploring the latest tech trends. I'm all about combining theory with practical skills, and I'm constantly pushing myself to learn and grow in this fast-paced field of computer science.
+                            </p>
+                            <div class="about-me-divison">
+                                <div class="about-me-table">
+                                    <ul>
+                                        <li><span>Country:</span> Indian</li>
+                                        <li><span>Age:</span> 20</li>
+                                        <li><span>Phone:</span> 9363358751</li>
+                                        <li><span>Degree:</span> Bachelor Of Engineering</li>
+                                        <li><span>Department:</span> Computer Science Engineering</li>
+                                    </ul>
+                                    <div class="buttongroup" style="margin-top: 20px;">
+                                        <button onclick="navigate(4)">Contact Me</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" style="flex: 1; margin-left: 40px;">
+                            <ul>
+                                <li>
+                                    <p>HTML</p>
+                                    <div class="bar" style="background: #e0e0e0; border-radius: 5px; overflow: hidden;">
+                                        <div class="active-bar" style="width: 90%; background: #E50914; height: 10px;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>CSS</p>
+                                    <div class="bar" style="background: #e0e0e0; border-radius: 5px; overflow: hidden;">
+                                        <div class="active-bar" style="width: 85%; background: #E50914; height: 10px;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>JavaScript</p>
+                                    <div class="bar" style="background: #e0e0e0; border-radius: 5px; overflow: hidden;">
+                                        <div class="active-bar" style="width: 65%; background: #E50914; height: 10px;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>MongoDB</p>
+                                    <div class="bar" style="background: #e0e0e0; border-radius:4px;overflow: hidden;">
+                                        <div class="active-bar" style="width: 70%; background: #E50914; height: 10px;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>C Programming</p>
+                                    <div class="bar" style="background: #e0e0e0; border-radius:4px;overflow: hidden;">
+                                        <div class="active-bar" style="width: 45%; background: #E50914; height: 10px;" ></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Java Programming</p>
+                                    <div class="bar" style="background: #e0e0e0; border-radius: 5px; overflow: hidden;">
+                                        <div class="active-bar" style="width: 45%; background: #E50914; height: 10px;" ></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>SQL Programming</p>
+                                    <div class="bar" style="background: #e0e0e0; border-radius: 5px; overflow: hidden;">
+                                        <div class="active-bar" style="width: 90%; background: #E50914; height: 10px;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Git And Github</p>
+                                    <div class="bar" style="background: #e0e0e0; border-radius: 5px; overflow: hidden;">
+                                        <div class="active-bar" style="width: 65%; background: #E50914; height: 10px;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                 <!-- <div class="swiper-slide">
+                    <div class="services">
+                        <div class="services-icon "><i class="fa-solid fa-globe"></i></div>
+                        <h2>Web Developer Build Using MERN Stack</h2>
+                        <p>Society Management Website</p>
+                    </div>
+                </div>  -->
+                <div class="swiper-slide">
+                    <div class="services">
+                        <div class="services-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h2>Web Developer Build Using MERN Stack</h2>
+                        <p>Society Management Website</p>
+                         <a href="https://github.com/KIRTIVAASAN/SocietyManagementWebsite.git" style="text-decoration: none;"> 
+                            <div class="buttongroup" style="margin-top: 20px;">
+                            <button>Click Here To See The Project</button>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide" style="display: flex; flex-direction: column; align-items: center;">
+                    <h1 class="heading" style="text-align: center; margin-bottom: 20px;">Certifications</h1>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%;">
+                        <!-- Row 1 -->
+                        <div class="project" style="flex: 1 0 30%; max-width: 200px; text-align: center;">
+                            <img src="Octanet.jpeg" alt="Description 1" style="width: 100%; height: auto;">
+                            <p style="margin-top: 5px; color: #E50914;">Java Programming Internship</p>
+                        </div>
+                        <div class="project" style="flex: 1 0 30%; max-width: 200px; text-align: center;">
+                            <img src="iot internship.jpeg" alt="Description 2" style="width: 100%; height: auto;">
+                            <p style="margin-top: 5px; color: #ff000d;">IOT Using Raspberry pi Internship</p>
+                        </div>
+                        <div class="project" style="flex: 1 0 30%; max-width: 200px; text-align: center;">
+                            <img src="value1.jpeg" alt="Description 3" style="width: 100%; height: auto;">
+                            <p style="margin-top: 5px; color:#ff000d">Value Added Course In MERN Stack</p>
+                        </div>
+                        <!-- Row 2 -->
+                        <div class="project" style="flex: 1 0 30%; max-width: 200px; text-align: center;">
+                            <img src="coursera.jpeg" alt="Description 4" style="width: 100%; height: auto;">
+                            <p style="margin-top: 5px; color: #ff000d;">Value Added Course In Introduction In Java</p>
+                        </div>
+                        <div class="project" style="flex: 1 0 30%; max-width: 200px; text-align: center;">
+                            <img src="sql.jpeg" alt="Description 6" style="width: 100%; height: auto;">
+                            <p style="margin-top: 5px; color: #ff000d;">Value Added Course In SQL Programming</p>
+                        </div>
+                        <div class="project" style="flex: 1 0 30%; max-width: 200px; text-align: center;">
+                            <img src="fullstack.jpeg" alt="Description 5" style="width: 100%; height: auto;">
+                            <p style="margin-top: 5px;color: #ff000d;">Workshop In FullStack Programming</p>
+                        </div>
+                        <div class="project" style="flex: 1 0 30%; max-width: 200px; text-align: center;">
+                            <img src="iot karan.jpeg" alt="Description 6" style="width: 100%; height: auto;">
+                            <p style="margin-top: 5px; color: #ff000d;">Workshop In IOT Engineer Training</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div class="swiper-slide" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
+                    <!-- Left side: Contact Info -->
+                    <div style="flex: 1; max-width: 45%;">
+                        <h1 class="heading">Contact Me</h1>
+                        <div class="contactinfo" style="margin-bottom: 20px;">
+                            <i class="fa-solid fa-phone"></i>
+                            <h3 style="display: inline-block; margin-left: 20px;">Mobile No</h3>
+                            <p style="margin-left: 20px;">9363358751</p>
+                        </div>
+                        <div class="contactinfo" style="margin-bottom: 20px;">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3 style="display: inline-block; margin-left: 10px;">Location</h3>
+                            <p style="margin-left: 30px;">No.64, Thirumalai Nagar, 3rd Main Road, Kolathur, Chennai-600099</p>
+                        </div>
+                        <div class="contactinfo" style="margin-bottom: 20px;">
+                            <i class="fa-regular fa-envelope"></i>
+                            <h3 style="display: inline-block; margin-left: 10px;">Email</h3>
+                            <p style="margin-left: 30px;">12315kirtivaasan@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Right side: Contact Form -->
+                    <div style="flex: 1; max-width: 50%;">
+                        <form style="margin-top: 160px;">
+                            <h2 style="margin-bottom: 20px; color: #E50914;">Send Me A Message</h2>
+                            <div class="sociallinks" style="margin-bottom: 20px;">
+                                <i class="fa-brands fa-instagram" style="margin-right: 10px;"></i>
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div> 
+                            <input type="text" placeholder="Name" style="width: 100%; margin-bottom: 10px; padding: 10px;">
+                            <input type="email" placeholder="Email" style="width: 100%; margin-bottom: 10px; padding: 10px;">
+                            <textarea rows="10" placeholder="Type your message..." style="width: 100%; margin-bottom: 10px; padding: 10px;"></textarea>
+                            <button class="primary" style="padding: 10px 20px;">Send</button>
+                        </form>
+                    </div>
+                </div>
+                
+           </div>
+            </div>
+    </main>
+</body>
+</html>
